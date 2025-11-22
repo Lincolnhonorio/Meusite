@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>lincolnhonorio.com.br</title>
+
+    <!-- LINKA O CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="navbar">
+        <div class="logo">
+            <span class="nome">Lincoln Honorio</span><br>
+            <span class="cargo">Data Analyst</span>
+        </div>
+
+
+        <div class="hamburger" onclick="toggleMenu()">
+            &#9776;
+        </div>
+
+        <div class="menu" id="menu">
+            <div class="tab active" onclick="showTab('Home'); toggleMenu()">Home</div>
+            <div class="tab" onclick="showTab('Sobre'); toggleMenu()">Sobre</div>
+            <div class="tab" onclick="showTab('Principais Habilidades'); toggleMenu()">Principais Habilidades</div>
+            <div class="tab" onclick="showTab('Como Posso te Ajudar'); toggleMenu()">Como Posso te Ajudar</div>
+            <div class="tab" onclick="showTab('Portfolio'); toggleMenu()">Portifólio</div>
+        </div>
+    </div>
+
+    <!-- ÁREAS DE CONTEÚDO -->
+    <div id="Home" class="content active-content">
+        <h2>Seja Muito Bem Vindo ao meu site Visitante!<br> <br> Aqui você vai me conhecer melhor, descobrir alguns dos projetos que venho desenvolvendo e <br> também acessar meus contatos. <br> <br> Meu objetivo é criar uma ótima conexão e oferecer soluções que realmente façam a diferença. </h2>
+
+          
+    </div>
+
+    <style>
+.foto-perfil {
+    width: 240px;
+    height: 240px;
+    background: red;
+    border-radius: 50%;
+}
+</style>
+
+
+    <div id="Sobre" class="content">
+        <img src="images/1745527234815.jpg" class="foto-perfil">
+        <h2>Estou a mais de 7 anos no mercado, porém trabalhando em uma parte mais institucional como Supervisor Financeiro e <br> de RH, atuo na integração entre gestão e tecnologia para promover eficiência, inovação e transparência nos processos, <br> e agora busco uma virada, através da tecnologia quero estar integrado não só ao mercado de negócios, mas também fomentar um viés mais tecnológico em minha carreira. <br><br><br><br>
+
+Busco transformar dados em insights de alto valor que apoiem a tomada de decisão. <br>
+Pós-graduando em Data Science, com domínio em SQL, Power BI, Excel preditivo, VBA e Python.</<h2>
+    </div>
+
+    <div id="Principais Habilidades" class="content">
+        <H2>Programação:</H2>
+        <p>Tenho experiência prática e efetividade nas linguagens Python, Java e JavaScript, aplicando-as em projetos de análise de dados, automação e desenvolvimento de soluções. </p>
+        <h2>SQL e Manipulação de Dados:</h2>
+        <p> Habilidade avançada em SQL, com capacidade de criar queries complexas, manipular grandes volumes de dados e otimizar bancos de dados para melhor performance.
+        </p>
+        <h2>Sistemas ERP:</h2>
+        <p>Experiência no entendimento e uso de sistemas ERP, garantindo integração eficiente entre processos e dados empresariais.</p>
+        <h2>Finanças e Recursos Humanos:</h2>
+        <p>Mais de 4 anos como Supervisor Financeiro e de RH, integrando gestão, análise de dados e auditoria para apoiar decisões estratégicas e otimizar processos.</p>
+    </div>
+
+    <div id="Como Posso te Ajudar" class="content">
+        <h2> Analisando e transformando dados em ações</h2>
+        <p>Convertendo informações em insights acionáveis, otimizando processos e impulsionando resultados estratégicos. </p>
+        <h2>Desenvolvendo dashboards eficientes</h2>
+        <p>Criando painéis intuitivos e informativos para monitoramento de KPIs em tempo real, facilitando decisões rápidas e precisas.</p>
+        <h2>Implementando boas práticas de dados</h2>
+        <p>Estabelecendo metodologias modernas para governança, qualidade e segurança das informações, garantindo confiabilidade e consistência.</p>
+        <h2>Criando soluções em inteligência artificial</h2>
+        <p>Projetando agentes inteligentes e pipelines de dados, automatizando processos e extraindo insights valiosos de maneira eficaz. </p>
+    </div>
+
+    <div id="Portfolio" class="content">
+        <h2>Portifólio</h2>
+        <p>Nessa Aba você encontra projetos que venho desenvolvendo, buscando trazer uma gama de soluções empresárias, mostrando minhas capacidades em cada um deles:</p>
+
+        <div class="projetos">
+
+        <div class="projeto-card">
+        <!-- Parte superior: imagem -->
+        <div class="projeto-img">
+         <img src="images/data_analysis_general.png" alt="Portifolio Completo">
+        </div>
+
+    <!-- Parte inferior: título, descrição e botão -->
+            <div class="projeto-info">
+            <h3>Portfólio Geral</h3>
+            <p>Uma visão completa de todos os projetos que desenvolvi, centralizando meu trabalho em um só lugar.</p>
+            <a href="https://github.com/Lincolnhonorio/PortifoliodeProjetos" target="_blank" class="projeto-btn">
+            Ver Detalhes 🔗
+            </a>
+            </div>
+        </div>
+
+        <div class="projeto-card">
+        <!-- Parte superior: imagem -->
+        <div class="projeto-img">
+         <img src="images/power_bi_project.png" alt="Projeto 1">
+        </div>
+
+    <!-- Parte inferior: título, descrição e botão -->
+            <div class="projeto-info">
+            <h3>Power BI</h3>
+            <p>Projeto com power bi, SQL e excel.</p>
+            <a href="https://github.com/Lincolnhonorio/AnalisedeDadosComPowerBI" target="_blank" class="projeto-btn">
+            Ver Detalhes 🔗
+            </a>
+            </div>
+        </div>
+
+        <div class="projeto-card">
+        <!-- Parte superior: imagem -->
+        <div class="projeto-img">
+         <img src="images/data_analysis_ai.png" alt="Projeto 1">
+        </div>
+
+    <!-- Parte inferior: título, descrição e botão -->
+            <div class="projeto-info">
+            <h3>Agentes de IA</h3>
+            <p>Projeto que busca soluções de IA(em andamento).</p>
+            <a href="https://github.com/Lincolnhonorio/PortifoliodeProjetos/tree/main/AgentedeIA" target="_blank" class="projeto-btn">
+            Ver Detalhes 🔗
+            </a>
+            </div>
+        </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+    <footer class="footer">
+    <div class="footer-icons">
+
+        <!-- GitHub -->
+        <a href="https://github.com/Lincolnhonorio" target="_blank">
+            <img src="icons/github-outline.png" alt="GitHub">
+        </a>
+
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/in/lincoln-honorio-1aa4a6286" target="_blank">
+            <img src="icons/linkedin-outline.png" alt="LinkedIn">
+        </a>
+
+       <!-- E-mail -->
+        <a href="lincolnhonorio@hotmail.com">
+            <img src="icons/email-outline.png" alt="E-mail">
+        </a>
+
+        <!-- Link do seu site (home) -->
+        <a href="https://lincolnhonorio.com.br">
+            <img src="icons/website-outline.png" alt="Website">
+        </a>
+
+    </div>
+
+</footer>
+
+<footer>
+    <div class="footer-text">
+        © 2025 Lincoln Honorio — Todos os direitos reservados
+    </div>
+</footer>
+
+</body>
+</html>
