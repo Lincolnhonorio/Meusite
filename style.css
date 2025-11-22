@@ -11,6 +11,8 @@ body {
     color: aliceblue; 
 }
 
+
+
 /* NAVBAR */
 .navbar {
     display: flex;
@@ -24,11 +26,13 @@ body {
 .logo .nome{
     font-size: 35px;
     color: white;
+    
 }
 
 .logo .cargo {
     font-size: 43px;
     color:  greenyellow;
+    
 }
 
 /* Ícone hambúrguer */
@@ -60,40 +64,39 @@ body {
 /* CONTEÚDO */
 .content {
     display: none;
+
+    /* largura e altura da tela */
     width: 100vw;
     height: 100vh;
-    padding: 20px 40px;
+
+    /* padding interno menor para caber na tela */
+    padding: 20px 40px; /* ou ajuste conforme necessário */
+
     background: #0f0538;
     box-sizing: border-box;
+
+    /* remove rolagem */
     overflow: hidden;
 }
+
 
 .active-content {
     display: block;
 }
 
-/* FOTO PERFIL APENAS PARA ABA SOBRE */
-#sobre .foto-perfil {
-    width: 150px;
-    height: 150px;
+/* FOTO PERFIL */
+.foto-perfil {
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
     object-fit: cover;
+    position: absolute;
+    top: 350px;
+    right: 20px;
     border: 3px solid white;
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
 }
 
-/* Container da aba Sobre */
-.sobre-container {
-    display: flex;
-    align-items: flex-start;
-    gap: 20px;
-}
-
-.sobre-texto {
-    flex: 1; /* faz o texto ocupar o restante do espaço */
-}
-
-/* Projetos */
 .projetos {
     display: flex;     
     flex-wrap: wrap;         
@@ -106,7 +109,7 @@ body {
     width: 300px;
     background: #1a0a53;
     border-radius: 10px;
-    overflow: hidden;
+    overflow: hidden; /* para bordas arredondadas da imagem também */
     box-shadow: 0 0 15px rgba(0,0,0,0.5);
     display: flex;
     flex-direction: column;
@@ -117,12 +120,14 @@ body {
     transform: scale(1.03);
 }
 
+/* Imagem do projeto */
 .projeto-img img {
     width: 100%;
     height: 180px;
     object-fit: cover;
 }
 
+/* Parte inferior: título, resumo e botão */
 .projeto-info {
     padding: 15px;
     display: flex;
@@ -161,7 +166,6 @@ body {
     transform: scale(1.05);
 }
 
-/* Footer */
 .footer {
     position: fixed;        
     bottom: 0;             
@@ -200,6 +204,25 @@ body {
     opacity: 0.8;
 }
 
+.sobre-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.sobre .foto-perfil {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.sobre-texto {
+    flex: 1; /* faz o texto ocupar o restante do espaço */
+}
+
 /* MOBILE */
 @media (max-width: 768px) {
     .sobre-container {
@@ -208,7 +231,7 @@ body {
         text-align: center;
     }
 
-    #sobre .foto-perfil {
+    .foto-perfil {
         width: 120px;
         height: 120px;
         margin: 0 auto 20px; /* centraliza e dá espaçamento embaixo */
@@ -218,20 +241,14 @@ body {
         right: 0;
     }
 
-    /* Menu hamburger */
+    /* restante do mobile */
     .menu { display: none; flex-direction: column; background: #0f0538; width: 100%; padding: 10px 0; }
     .menu.show { display: flex; }
     .menu .tab { padding: 12px 20px; border-bottom: 1px solid #0a0320; color: greenyellow; }
     .menu .tab:hover, .menu .tab.active { background: #0a0320; }
     .hamburger { display: block; cursor: pointer; }
-
-    /* Projetos empilhados */
     .projetos { flex-direction: column; gap: 15px; margin-top: 15px; }
-
-    /* Conteúdo geral */
     .content { padding: 15px; width: 100%; height: auto; overflow: visible; }
-
-    /* Footer ajustado */
     .footer { padding: 15px 0; }
     .footer-icons { gap: 15px; }
 }
