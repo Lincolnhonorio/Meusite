@@ -219,6 +219,10 @@ body {
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
 }
 
+.sobre-texto {
+    flex: 1; /* faz o texto ocupar o restante do espaço */
+}
+
 /* MOBILE */
 @media (max-width: 768px) {
     .sobre-container {
@@ -230,69 +234,21 @@ body {
     .foto-perfil {
         width: 120px;
         height: 120px;
-        margin-bottom: 15px;
-    }
-}
-
-    /* Menu hamburger */
-    .menu {
-        display: none;
-        flex-direction: column;
-        background: #0f0538;
-        width: 100%;
-        padding: 10px 0;
-    }
-
-    .menu.show {
-        display: flex;
-    }
-
-    .menu .tab {
-        padding: 12px 20px;
-        border-bottom: 1px solid #0a0320;
-        color: greenyellow;
-    }
-
-    .menu .tab:hover,
-    .menu .tab.active {
-        background: #0a0320;
-    }
-
-    .hamburger {
+        margin: 0 auto 20px; /* centraliza e dá espaçamento embaixo */
         display: block;
-        cursor: pointer;
-    }
-
-    /* Projetos empilhados */
-    .projetos {
-        flex-direction: column;
-        gap: 15px;
-        margin-top: 15px;
-    }
-
-    /* Conteúdo geral */
-    .content {
-        padding: 15px;
-        width: 100%;
-        height: auto; /* evita cortar o conteúdo */
-        overflow: visible;
-    }
-
-    /* Foto perfil adaptável */
-    .foto-perfil {
-        position: relative;
+        position: relative;  /* garante que fique no fluxo */
         top: 0;
         right: 0;
-        margin: 0 auto 20px;
-        display: block;
     }
 
-    /* Footer ajustado */
-    .footer {
-        padding: 15px 0;
-    }
-
-    .footer-icons {
-        gap: 15px;
-    }
+    /* restante do mobile */
+    .menu { display: none; flex-direction: column; background: #0f0538; width: 100%; padding: 10px 0; }
+    .menu.show { display: flex; }
+    .menu .tab { padding: 12px 20px; border-bottom: 1px solid #0a0320; color: greenyellow; }
+    .menu .tab:hover, .menu .tab.active { background: #0a0320; }
+    .hamburger { display: block; cursor: pointer; }
+    .projetos { flex-direction: column; gap: 15px; margin-top: 15px; }
+    .content { padding: 15px; width: 100%; height: auto; overflow: visible; }
+    .footer { padding: 15px 0; }
+    .footer-icons { gap: 15px; }
 }
