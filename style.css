@@ -206,12 +206,18 @@ body {
 
 /* MOBILE */
 @media (max-width: 768px) {
+
+    /* Menu hamburger */
     .menu {
         display: none;
         flex-direction: column;
         background: #0f0538;
         width: 100%;
         padding: 10px 0;
+    }
+
+    .menu.show {
+        display: flex;
     }
 
     .menu .tab {
@@ -227,18 +233,39 @@ body {
 
     .hamburger {
         display: block;
+        cursor: pointer;
     }
 
-    .menu.show {
-        display: flex;
-    }
-
+    /* Projetos empilhados */
     .projetos {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    margin-top: 15px;
-}
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 15px;
+    }
 
+    /* Conteúdo geral */
+    .content {
+        padding: 15px;
+        width: 100%;
+        height: auto; /* evita cortar o conteúdo */
+        overflow: visible;
+    }
 
+    /* Foto perfil adaptável */
+    .foto-perfil {
+        position: relative;
+        top: 0;
+        right: 0;
+        margin: 0 auto 20px;
+        display: block;
+    }
+
+    /* Footer ajustado */
+    .footer {
+        padding: 15px 0;
+    }
+
+    .footer-icons {
+        gap: 15px;
+    }
 }
