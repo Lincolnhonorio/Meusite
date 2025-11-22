@@ -204,8 +204,35 @@ body {
     opacity: 0.8;
 }
 
+.sobre-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.foto-perfil {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
 /* MOBILE */
 @media (max-width: 768px) {
+    .sobre-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .foto-perfil {
+        width: 120px;
+        height: 120px;
+        margin-bottom: 15px;
+    }
+}
 
     /* Menu hamburger */
     .menu {
