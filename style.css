@@ -204,12 +204,6 @@ body {
     opacity: 0.8;
 }
 
-.sobre-container {
-    display: flex;
-    align-items: flex-start;
-    gap: 20px;
-}
-
 .sobre .foto-perfil {
     width: 150px;
     height: 150px;
