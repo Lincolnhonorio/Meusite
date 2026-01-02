@@ -2,13 +2,12 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
 
-    background: #0f0538;
-    color: aliceblue; 
+    width: 100%;
+    overflow-y: auto;
+
+    background:#0f0538;
+    color: aliceblue;
 }
 
 
@@ -21,35 +20,16 @@ body {
     background: #0f0538;
     color: #0f0538;
     padding: 5px 10px;
+    margin-bottom: 0;
 }
 
-.logo .nome{
-    font-size: 35px;
-    color: white;
-    
-}
-
-.logo .cargo {
-    font-size: 43px;
-    color:  greenyellow;
-    
-}
-
-/* Ícone hambúrguer */
-.hamburger {
-    font-size: 26px;
-    cursor: pointer;
-    display: none;
-}
-
-/* MENU DESKTOP */
 .menu {
     display: flex;
     gap: 20px;
 }
 
 .menu .tab {
-    padding: 14px 20px;
+    padding: 5px 10px;
     color: greenyellow;
     cursor: pointer;
     text-align: center;
@@ -61,24 +41,22 @@ body {
     background: #0a0320;
 }
 
-/* CONTEÚDO */
 .content {
     display: none;
-
-    /* largura e altura da tela */
-    width: 100vw;
-    height: 100vh;
-
-    /* padding interno menor para caber na tela */
-    padding: 20px 40px; /* ou ajuste conforme necessário */
-
+    width: 100%;
+    height: auto;
+    padding: 0px 24px;
+    margin: 0;
+    border: none;
     background: #0f0538;
     box-sizing: border-box;
-
-    /* remove rolagem */
-    overflow: hidden;
 }
 
+.content h2 {
+    margin-top: 0; 
+    padding-top: 0px;
+    border: none;
+}
 
 .active-content {
     display: block;
@@ -91,24 +69,22 @@ body {
     border-radius: 50%;
     object-fit: cover;
     position: absolute;
-    top: 350px;
-    right: 20px;
+    top: 250px;
+    right: 50px;
     border: 3px solid white;
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
 }
 
 .projetos {
-    display: flex;     
-    flex-wrap: wrap;         
-    gap: 20px;               
+    display: flex;
+    gap: 20px;
     justify-content: center; 
-    margin-top: 20px;
 }
 
 .projeto-card {
     width: 300px;
     background: #1a0a53;
-    border-radius: 10px;
+    border-radius: 15px;
     overflow: hidden; /* para bordas arredondadas da imagem também */
     box-shadow: 0 0 15px rgba(0,0,0,0.5);
     display: flex;
@@ -157,7 +133,7 @@ body {
     font-weight: bold;
     text-align: center;
     border-radius: 5px;
-    margin-top: auto;
+    margin-top: 5px;
     transition: transform 0.2s, background 0.2s;
 }
 
@@ -171,7 +147,7 @@ body {
     bottom: 0;             
     left: 0;
     width: 100%;
-    padding: 25px 0;
+    padding: 0px 0;
     display: flex;
     flex-direction: column; 
     justify-content: center;
