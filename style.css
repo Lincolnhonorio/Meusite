@@ -198,8 +198,7 @@ body {
     .foto-perfil {
         width: 120px;
         height: 120px;
-        margin: 0 auto 20px; /* centraliza e dá espaçamento embaixo */
-        display: block;
+        display: auto;
         position: relative;  /* garante que fique no fluxo */
         top: 0;
         right: 0;
