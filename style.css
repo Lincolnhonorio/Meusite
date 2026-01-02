@@ -1,0 +1,242 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+
+    background: #0f0538;
+    color: aliceblue; 
+}
+
+
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #0f0538;
+    color: #0f0538;
+    padding: 5px 10px;
+}
+
+.logo .nome{
+    font-size: 35px;
+    color: white;
+    
+}
+
+.logo .cargo {
+    font-size: 43px;
+    color:  greenyellow;
+    
+}
+
+/* Ícone hambúrguer */
+.hamburger {
+    font-size: 26px;
+    cursor: pointer;
+    display: none;
+}
+
+/* MENU DESKTOP */
+.menu {
+    display: flex;
+    gap: 20px;
+}
+
+.menu .tab {
+    padding: 14px 20px;
+    color: greenyellow;
+    cursor: pointer;
+    text-align: center;
+    transition: background 0.3s;
+}
+
+.menu .tab:hover,
+.menu .tab.active {
+    background: #0a0320;
+}
+
+/* CONTEÚDO */
+.content {
+    display: none;
+
+    /* largura e altura da tela */
+    width: 100vw;
+    height: 100vh;
+
+    /* padding interno menor para caber na tela */
+    padding: 20px 40px; /* ou ajuste conforme necessário */
+
+    background: #0f0538;
+    box-sizing: border-box;
+
+    /* remove rolagem */
+    overflow: hidden;
+}
+
+
+.active-content {
+    display: block;
+}
+
+/* FOTO PERFIL */
+.foto-perfil {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    top: 350px;
+    right: 20px;
+    border: 3px solid white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.projetos {
+    display: flex;     
+    flex-wrap: wrap;         
+    gap: 20px;               
+    justify-content: center; 
+    margin-top: 20px;
+}
+
+.projeto-card {
+    width: 300px;
+    background: #1a0a53;
+    border-radius: 10px;
+    overflow: hidden; /* para bordas arredondadas da imagem também */
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s;
+}
+
+.projeto-card:hover {
+    transform: scale(1.03);
+}
+
+/* Imagem do projeto */
+.projeto-img img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+/* Parte inferior: título, resumo e botão */
+.projeto-info {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;                 
+    justify-content: space-between;
+}
+
+.projeto-info h3 {
+    color: greenyellow;
+    margin: 0;
+    font-size: 18px;
+}
+
+.projeto-info p {
+    color: aliceblue;
+    font-size: 14px;
+    margin: 0;
+    flex-grow: 1;
+}
+
+.projeto-btn {
+    padding: 10px;
+    background: greenyellow;
+    color: #130642;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: auto;
+    transition: transform 0.2s, background 0.2s;
+}
+
+.projeto-btn:hover {
+    background: #00ff00;
+    transform: scale(1.05);
+}
+
+.footer {
+    position: fixed;        
+    bottom: 0;             
+    left: 0;
+    width: 100%;
+    padding: 25px 0;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    background: #0f0538;    
+    z-index: 1000;          
+}
+
+.footer-icons {
+    display: flex;
+    gap: 25px;
+    margin-bottom: 10px;    
+}
+
+.footer-icons img {
+    width: 40px;
+    height: 40px;
+    transition: 0.3s ease;
+}
+
+.footer-icons img:hover {
+    transform: scale(1.5);
+    opacity: 1;
+}
+
+.footer-text {
+    color: aliceblue;
+    font-size: 14px;
+    text-align: center;
+    opacity: 0.8;
+}
+
+.sobre .foto-perfil {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.sobre-texto {
+    flex: 1; /* faz o texto ocupar o restante do espaço */
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    .foto-perfil {
+        width: 120px;
+        height: 120px;
+        margin: 0 auto 20px; /* centraliza e dá espaçamento embaixo */
+        display: block;
+        position: relative;  /* garante que fique no fluxo */
+        top: 0;
+        right: 0;
+    }
+
+    /* restante do mobile */
+    .menu { display: none; flex-direction: column; background: #0f0538; width: 100%; padding: 10px 0; }
+    .menu.show { display: flex; }
+    .menu .tab { padding: 12px 20px; border-bottom: 1px solid #0a0320; color: greenyellow; }
+    .menu .tab:hover, .menu .tab.active { background: #0a0320; }
+    .hamburger { display: block; cursor: pointer; }
+    .projetos { flex-direction: column; gap: 15px; margin-top: 15px; }
+    .content { padding: 15px; width: 100%; height: auto; overflow: visible; }
+    .footer { padding: 15px 0; }
+    .footer-icons { gap: 15px; }
+}
