@@ -195,29 +195,12 @@ body {
 
 /* Ajuste para Celulares */
 @media screen and (max-width: 768px) {
-    
-    /* Faz o container principal empilhar os itens verticalmente */
-    .about-me-content {
-        display: flex;
-        flex-direction: column; /* Coloca foto e texto um embaixo do outro */
-        align-items: center;    /* Centraliza tudo */
-        text-align: center;     /* Alinha o texto no meio */
-        padding: 20px;
-    }
-
-    /* Ajusta a foto para não ficar por cima de nada */
     .foto-perfil {
         width: 150px !important;
         height: 150px !important;
         margin-bottom: 20px !important; /* Cria espaço entre a foto e o texto */
         position: static !important;    /* Garante que ela siga o fluxo normal */
         display: block;
-    }
-
-    /* Ajusta o texto para ocupar a largura total no mobile */
-    .about-me-text {
-        width: 100% !important;
-        padding: 0 10px;
     }
 }
 
