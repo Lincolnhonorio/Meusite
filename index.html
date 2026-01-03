@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>lincolnhonorio.com.br</title>
+
+    <!-- LINKA O CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="logo">
+        <img src="images/LOGO.png" style="width: 180px; margin: 0" />
+      </div>
+
+      <div class="hamburger" onclick="toggleMenu()">☰</div>
+
+      <div class="menu" id="menu">
+        <div class="tab active" onclick="showTab('Home'); toggleMenu()">
+          Home
+        </div>
+
+        <div class="tab" onclick="showTab('Sobre'); toggleMenu()">Sobre</div>
+        <div
+          class="tab"
+          onclick="showTab('Principais_Habilidades'); toggleMenu()"
+        >
+          Principais Habilidades
+        </div>
+        <div class="tab" onclick="showTab('Como_Ajudar'); toggleMenu()">
+          Como Posso te Ajudar
+        </div>
+        <div class="tab" onclick="showTab('Portfolio'); toggleMenu()">
+          Portifólio
+        </div>
+      </div>
+    </div>
+
+    <div
+      id="Home"
+      class="content active-content"
+      style="
+        font-family: Arial, sans-serif;
+        line-height: 1.5;
+        color: #333;
+        margin: auto;
+      "
+    >
+      <!-- Título centralizado -->
+      <h2
+        style="
+          font-size: 24px;
+          margin-bottom: 15px;
+          color: greenyellow;
+          text-align: center;
+        "
+      >
+        Seja muito bem-vindo ao meu site, visitante!
+      </h2>
+      <br />
+
+      <!-- Texto alinhado à esquerda -->
+      <h2
+        style="
+          font-size: 22px;
+          margin-bottom: 25px;
+          color: aliceblue;
+          text-align: left;
+        "
+      >
+        Aqui você vai me conhecer melhor, descobrir alguns dos projetos que
+        venho desenvolvendo e também acessar meus contatos.
+      </h2>
+      <br />
+
+      <h3 style="font-size: 18px; color: greenyellow; text-align: center">
+        Meu objetivo é criar uma ótima conexão e oferecer soluções que realmente
+        façam a diferença.
+      </h3>
+    </div>
+
+    <div id="Sobre" class="content sobre-container">
+      <img
+        src="images/1745527234815.jpg"
+        class="foto-perfil"
+        alt="Foto Perfil"
+      />
+      <div class="sobre-texto">
+        <div
+          style="
+            font-family: Arial, sans-serif;
+            line-height: 1.5;
+            color: #333;
+            margin: auto;
+          "
+        >
+          <h2 style="font-size: 25px; margin-bottom: 15px; color: aliceblue">
+            Com mais de 7 anos de experiência em funções institucionais, atuando
+            como Supervisor Financeiro e de RH, venho integrando gestão e
+            tecnologia para promover eficiência, inovação e transparência nos
+            processos. <br />Estou em transição de carreira, buscando ampliar
+            minha atuação em áreas tecnológicas <br />e estratégicas.
+          </h2>
+
+          <h3 style="font-size: 18px; margin-bottom: 20px; color: greenyellow">
+            Tenho foco em transformar dados em insights de alto valor para
+            apoiar decisões de negócio. <br />Pós-graduando em Data Science,
+            tenho domínio completo em SQL, Power BI, Excel avançado e Python.
+          </h3>
+        </div>
+      </div>
+    </div>
+
+    <div id="Principais_Habilidades" class="content">
+      <h2 style="font-size: 28px; margin-bottom: 10px; color: greenyellow">
+        Programação
+      </h2>
+      <p style="font-size: 16px; margin-bottom: 20px">
+        Experiência prática em Python, Java e JavaScript, aplicadas em análise
+        de dados, automação e desenvolvimento de soluções.
+      </p>
+
+      <h2 style="font-size: 28px; margin-bottom: 10px; color: greenyellow">
+        SQL & Manipulação de Dados
+      </h2>
+      <p style="font-size: 16px; margin-bottom: 20px">
+        Domínio avançado em SQL, criação de queries complexas, manipulação de
+        grandes volumes de dados e otimização de bancos para melhor performance.
+      </p>
+
+      <h2 style="font-size: 28px; margin-bottom: 10px; color: greenyellow">
+        Sistemas ERP
+      </h2>
+      <p style="font-size: 16px; margin-bottom: 20px">
+        Experiência em sistemas ERP, garantindo integração eficiente entre
+        processos e dados empresariais.
+      </p>
+
+      <h2 style="font-size: 28px; margin-bottom: 10px; color: greenyellow">
+        Finanças & RH
+      </h2>
+      <p style="font-size: 16px; margin-bottom: 20px">
+        Mais de 4 anos como Supervisor Financeiro e de RH, integrando gestão,
+        análise de dados e auditoria para apoiar decisões estratégicas e
+        otimizar processos.
+      </p>
+    </div>
+
+    <div id="Como_Ajudar" class="content">
+      <div
+        style="
+          font-family: Arial, sans-serif;
+          line-height: 1.6;
+          color: aliceblue;
+          margin: auto;
+        "
+      >
+        <h2 style="font-size: 28px; margin-bottom: 10px; color: greenyellow">
+          Analisando e transformando dados em ações
+        </h2>
+        <p style="font-size: 16px; margin-bottom: 20px">
+          Convertendo informações em insights acionáveis, otimizando processos e
+          impulsionando resultados estratégicos.
+        </p>
+
+        <h2 style="font-size: 28px; margin-bottom: 10px; color: greenyellow">
+          Desenvolvendo dashboards eficientes
+        </h2>
+        <p style="font-size: 16px; margin-bottom: 20px">
+          Criando painéis intuitivos e informativos para monitoramento de KPIs
+          em tempo real, facilitando decisões rápidas e precisas.
+        </p>
+
+        <h2 style="font-size: 28px; margin-bottom: 10px; color: greenyellow">
+          Criando soluções em inteligência artificial
+        </h2>
+        <p style="font-size: 16px; margin-bottom: 20px">
+          Projetando agentes inteligentes e pipelines de dados, automatizando
+          processos e extraindo insights valiosos de maneira eficaz.
+        </p>
+      </div>
+    </div>
+
+    <div
+      id="Portfolio"
+      class="content"
+      style="
+        font-family: Arial, sans-serif;
+        color: aliceblue;
+        padding-top: 0;
+        margin-top: 0;
+      "
+    >
+      <h2
+        style="
+          color: greenyellow;
+          text-align: center;
+          margin-top: 0;
+          padding-top: 0;
+          border: none;
+        "
+      >
+        Portfólio
+      </h2>
+
+      <p style="color: #ddd; text-align: center; margin-bottom: 20px">
+        Nesta aba você encontra projetos que venho desenvolvendo, com foco em
+        soluções empresariais e analíticas, demonstrando minhas competências
+        técnicas e estratégicas em cada entrega.
+      </p>
+
+      <div class="projetos">
+        <div class="projeto-card">
+          <div class="projeto-img">
+            <img
+              src="images/data_analysis_general.png"
+              alt="Portfólio Completo"
+            />
+          </div>
+          <div class="projeto-info">
+            <h3 style="color: greenyellow">Portfólio Geral</h3>
+            <p>
+              Visão consolidada de todos os projetos desenvolvidos,
+              centralizando meu trabalho em um único repositório.
+            </p>
+            <a
+              href="https://github.com/Lincolnhonorio/PortifoliodeProjetos"
+              target="_blank"
+              class="projeto-btn"
+            >
+              Ver detalhes 🔗
+            </a>
+          </div>
+        </div>
+
+        <div class="projeto-card">
+          <div class="projeto-img">
+            <img src="images/power_bi_project.png" alt="Projeto Power BI" />
+          </div>
+          <div class="projeto-info">
+            <h3 style="color: greenyellow">Power BI & Dados</h3>
+            <p>
+              Projeto focado em análise de dados utilizando Power BI, SQL e
+              Excel.
+            </p>
+            <a
+              href="https://github.com/Lincolnhonorio/AnalisedeDadosComPowerBI"
+              target="_blank"
+              class="projeto-btn"
+            >
+              Ver detalhes 🔗
+            </a>
+          </div>
+        </div>
+
+        <div class="projeto-card">
+          <div class="projeto-img">
+            <img src="images/data_analysis_ai.png" alt="Agentes de IA" />
+          </div>
+          <div class="projeto-info">
+            <h3 style="color: greenyellow">Agentes de IA</h3>
+            <p>
+              Projeto focado no desenvolvimento de agentes inteligentes,
+              integrando lógica de decisão e automação.
+            </p>
+            <a
+              href="https://github.com/Lincolnhonorio/PortifoliodeProjetos/tree/main/SnakeAgenteDeIA"
+              target="_blank"
+              class="projeto-btn"
+            >
+              Ver detalhes 🔗
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+
+    <footer class="footer">
+      <div class="footer-icons">
+        <!-- GitHub -->
+        <a href="https://github.com/Lincolnhonorio" target="_blank">
+          <img src="icons/github-outline.png" alt="GitHub" />
+        </a>
+
+        <!-- LinkedIn -->
+        <a
+          href="https://www.linkedin.com/in/lincoln-honorio-1aa4a6286"
+          target="_blank"
+        >
+          <img src="icons/linkedin-outline.png" alt="LinkedIn" />
+        </a>
+
+        <!-- E-mail -->
+        <a href="mailto:lincolnhonorio@hotmail.com">
+          <img src="icons/email-outline.png" alt="E-mail" />
+        </a>
+
+        <!-- Link do seu site (home) -->
+        <a href="https://lincolnhonorio.com.br">
+          <img src="icons/website-outline.png" alt="Website" />
+        </a>
+      </div>
+      <div class="footer-text">
+        © 2025 Lincoln Honorio — Todos os direitos reservados
+      </div>
+    </footer>
+  </body>
+</html>
