@@ -194,7 +194,17 @@ body {
         display: block;
     }
 
-    /* Removi a chave que estava aqui fechando o @media antes da hora */
+    .projetos {
+        display: flex;
+        flex-direction: column; /* Empilha os cards */
+        align-items: center;    /* Centraliza */
+        gap: 25px;              /* Espaço entre um e outro */
+    }
+
+    .projeto-card {
+        width: 90%;             /* Largura quase total no celular */
+        max-width: 320px;       /* Não deixa esticar demais em tablets */
+    }
 
     .menu { display: none; flex-direction: column; background: #0f0538; width: 100%; padding: 10px 0; }
     .menu.show { display: flex; } /* Esta linha só funciona se o JS adicionar a classe 'show' */
