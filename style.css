@@ -245,4 +245,10 @@ body {
         font-size: 15px !important;
     }
 
+    .content {
+        padding: 10px 20px !important;
+        width: 100% !important;
+        box-sizing: border-box; 
+    }
+
 }
