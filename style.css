@@ -180,15 +180,6 @@ body {
     opacity: 0.8;
 }
 
-.sobre .foto-perfil {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 3px solid white;
-    box-shadow: 0 0 10px rgba(0,0,0,0.3);
-}
-
 .sobre-texto {
     flex: 1; /* faz o texto ocupar o restante do espaço */
 }
