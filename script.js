@@ -1,25 +1,39 @@
 function toggleMenu() {
-    document.getElementById('menu').classList.toggle('show');
+    const menu = document.getElementById('menu');
+    if (menu) {
+        menu.classList.toggle('show');
+    }
 }
 
 function showTab(tabId) {
-    // Esconde todos os conteúdos
+    // 1. Esconde todos os conteúdos
     document.querySelectorAll('.content').forEach(section => {
         section.classList.remove('active-content');
     });
 
-    // Remove classe ativa das abas
+    // 2. Remove classe ativa de todas as abas
     document.querySelectorAll('.tab').forEach(tab => {
         tab.classList.remove('active');
     });
 
-    // Mostra conteúdo da aba clicada
-    document.getElementById(tabId).classList.add('active-content');
-    event.target.classList.add('active');
+    // 3. Mostra o conteúdo da aba clicada
+    const targetContent = document.getElementById(tabId);
+    if (targetContent) {
+        targetContent.classList.add('active-content');
+    }
 
-    // Fecha o menu mobile ao clicar em uma aba
+    // 4. Adiciona classe ativa na aba clicada procurando pelo texto/id
+    // Isso é mais seguro que usar event.target
+    const activeTab = Array.from(document.querySelectorAll('.tab')).find(tab => 
+        tab.getAttribute('onclick').includes(tabId)
+    );
+    if (activeTab) {
+        activeTab.classList.add('active');
+    }
+
+    // 5. Fecha o menu mobile (ESSENCIAL)
     const menu = document.getElementById('menu');
-    if(menu.classList.contains('show')) {
+    if (menu) {
         menu.classList.remove('show');
     }
 }
