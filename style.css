@@ -1,7 +1,8 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
+
+    padding-bottom: 90px;
 
     width: 100%;
     overflow-y: auto;
@@ -9,8 +10,6 @@ body {
     background:#0f0538;
     color: aliceblue;
 }
-
-
 
 /* NAVBAR */
 .navbar {
@@ -147,7 +146,7 @@ body {
     bottom: 0;             
     left: 0;
     width: 100%;
-    padding: 0px 0;
+    padding: 8px 0;
     display: flex;
     flex-direction: column; 
     justify-content: center;
