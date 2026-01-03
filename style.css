@@ -195,15 +195,23 @@ body {
     }
 
     .projetos {
-        display: flex;
-        flex-direction: column; /* Empilha os cards */
-        align-items: center;    /* Centraliza */
-        gap: 25px;              /* Espaço entre um e outro */
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center;
+        gap: 25px;
+        width: 100%;
+        padding-bottom: 50px;
     }
 
     .projeto-card {
-        width: 90%;             /* Largura quase total no celular */
-        max-width: 320px;       /* Não deixa esticar demais em tablets */
+        width: 90% !important;
+        max-width: 320px !important;
+        height: auto !important;
+        position: static !important;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        z-index: 1000;
     }
 
     .menu { display: none; flex-direction: column; background: #0f0538; width: 100%; padding: 10px 0; }
